@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./src/style.css" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <title>SheCodes Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="Weather-container">
+        <header>
+          <ul class="city-favorites">
+            <li class="item-city-favorites" id="lagos">
+              <a href="#">Lagos</a>
+            </li>
+            <li class="item-city-favorites" id="abuja">
+              <a href="#">Abuja</a>
+            </li>
+            <li class="item-city-favorites" id="london">
+              <a href="#">London</a>
+            </li>
+            <li class="item-city-favorites" id="bristol">
+              <a href="#">Bristol</a>
+            </li>
+          </ul>
+        </header>
+        <main>
+          <form id="form-input" class="mb-3">
+            <div class="row">
+              <div class="col-5">
+                <input
+                  type="search"
+                  placeholder="Enter a city"
+                  id="city-input"
+                  autocomplete="off"
+                  autofocus="on"
+                  class="form-control search-input"
+                  required
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  class="btn btn-primary w-100 location-btn"
+                  value="Search"
+                />
+              </div>
+              <div class="col-4">
+                <button
+                  type="button"
+                  class="btn btn-primary w-100 location-btn"
+                  id="current-location-button"
+                >
+                  Current location
+                </button>
+              </div>
+            </div>
+          </form>
+          <div>
+            <h1></h1>
+            <ul>
+              <li id="input-time"></li>
+              <li id="description"></li>
+            </ul>
+          </div>
+          <div class="row">
+            <div class="col-7 d-flex Weather-temperature">
+              <img id="weather-icon" src="" alt="" width="64" />
+              <strong id="setTempValue"></strong>
+              <a id="units" href="#">°C</a>
+            </div>
+            <div class="col-5">
+              <ul>
+                <li>Precipitation : <span id="clouds"></span>%</li>
+                <li>Humidity : <span id="humidity"></span>%</li>
+                <li>Wind : <span id="wind">km/h</span></li>
+              </ul>
+            </div>
+          </div>
+          <section class="weather-forecast" id="forecast">
+            <div class="row weather-week">
+              <div class="col-2 weather-forecast-date">
+                <div>Tue</div>
+                <img src="" alt="" width="64" />
+                <div class="weather-forecast-temp">
+                  <span class="weather-forecast-max"></span>
+                  <span class="weather-forecast-min"></span>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+      <footer>
+        <!-- <p class="footer"> -->
+        Weather page was built by
+        
+          👩‍💻 Ifeoluwa Oni
+        
+        <a
+          href="https://github.com/Luwadeni/Vanilla-Weather-App"
+          target="_blank"
+        >
+         Open-source code on GitHub
+        </a>
+        and
+        <a href="https://lively-kulfi-7c3f2b.netlify.app/" target="_blank">
+          hosted on Netlify</a
+        >
+        <!-- </p> -->
+      </footer>
+    </div>
+    <script src="./src/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.2);
+}
+h1 {
+  color: #454545;
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 28px;
+  margin: 15px 0 0;
+}
+ul {
+  margin: 0 0 10px;
+  padding: 0;
+}
+li {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 19px;
+  list-style: none;
+}
+li::first-letter {
+  text-transform: uppercase;
+}
+a {
+  color: black;
+  text-decoration: none;
+  background: transparent;
+}
+a:hover {
+  text-decoration: underline;
+}
+footer {
+  font-size: 12px;
+  text-align: center;
+}
+.Weather-container {
+  
+  border: 1px solid #dadde1;
+  border-radius: 10px;
+  box-shadow: 3px 4px 6px rgba(37, 39, 89, 0.3);
+  margin: 20px auto;
+  max-width: 500px;
+  padding: 15px;
+  background: #11cabe;
+}
+.city-favorites {
+  margin-bottom: 20px;
+}
+.item-city-favorites {
+  display: inline;
+  font-size: 18px;
+  padding: 0 10px;
+}
+.search-input {
+  border-radius: 18px;
+  background: #e8f0fe;
+  box-shadow: 3px 4px 10px rgba(37, 39, 89, 0.8);
+}
+.search-input:focus {
+  border-radius: 18px;
+  background: #e8f0fe;
+  box-shadow: 3px 4px 10px rgba(37, 39, 89, 0.8);
+}
+.search-input::placeholder {
+  color: rgba(39, 33, 66, 0.4);
+}
+.location-btn {
+  background: #11cabe;
+  padding-left: 0;
+  padding-right: 0;
+  border-radius: 18px;
+  box-shadow: 3px 4px 10px rgba(37, 39, 89, 0.8);
+}
+.Weather-temperature img {
+  height: 100px;
+  width: 100px;
+  position: relative;
+  top: -20px;
+  right: -6px;
+}
+.Weather-temperature strong {
+  color: rgb(33, 33, 33);
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1;
+}
+.Weather-temperature a {
+  color: #1e0eb1;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.7;
+}
+.weather-forecast {
+  margin-bottom: 15px;
+  text-align: center;
+  color: #454545;
+}
+.weather-week {
+  justify-content: center;
+}
+.weather-forecast-date {
+  color: #454545;
+  font-size: 16px;
+  padding: 0;
+}
+.weather-forecast-min {
+  opacity: 0.5;
+}
