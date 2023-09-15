@@ -31,10 +31,6 @@ a {
 a:hover {
   text-decoration: underline;
 }
-footer {
-  font-size: 12px;
-  text-align: center;
-}
 .Weather-container {
   
   border: 1px solid #dadde1;
@@ -44,6 +40,11 @@ footer {
   max-width: 500px;
   padding: 15px;
   background: #11cabe;
+}
+.link {
+    text-align: center;
+    display: block;
+    font-size: 15px;
 }
 .city-favorites {
   margin-bottom: 20px;
