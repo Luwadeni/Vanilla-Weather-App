@@ -1,7 +1,6 @@
-// input now  Date
+
 function displaytDate() {
   let nowDate = new Date();
-  // console.log(nowDate);
   let hours = nowDate.getHours();
   let minutes = nowDate.getMinutes();
   let day = nowDate.getDay();
@@ -23,7 +22,6 @@ function displaytDate() {
   return `${days[day]}  ${hours}:${minutes}`;
 }
 
-// set Unit Temperature
 function setUnitTemperature(event) {
   event.preventDefault();
   if (unit === "metric") {
@@ -48,7 +46,6 @@ function setUnitTemperature(event) {
   getForecast(positionCityName);
 }
 
-// display Forecast;
 function displayForecast(response) {
   // console.log(response.data.daily);
   function formatDayForecast(timestamp) {
